@@ -1,0 +1,60 @@
+.button,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: none;
+    border-radius: 0;
+	border: none;
+	border-radius: 3px;
+	color: rgba(0, 0, 0, .8);
+	cursor: pointer; /* Improves usability and consistency of cursor style between image-type 'input' and others */
+	// -webkit-appearance: button; /* Corrects inability to style clickable 'input' types in iOS */
+	background: $color__accent;
+	@include font-size(1.2);
+	line-height: 1;
+	padding: 1em 1.4em;
+	text-transform: uppercase;
+	color: white;
+	// box-shadow: 0 2px 5px rgba(0,0,0,.4);
+	box-shadow: 0 0 0 rgba(0, 0, 0, 0.2);
+	@include transition_duration( 0.3s );
+
+	&:hover{
+		color: white;
+		// box-shadow: 0 4.5px 15px 1.5px rgba(0, 0, 0, 0.6);
+		box-shadow: 0 25px 55px 0 rgba(0, 0, 0, 0.21), 0 16px 28px 0 rgba(0, 0, 0, 0.22);
+		@include transition_duration( 0.2s );
+	}
+
+	&:active{
+		background-color: darken( $color__accent, 3% );
+	}
+
+	&:focus{
+		outline: none;
+		background-color: darken( $color__accent, 10% );
+		box-shadow: 0 2px 2px darken( $color__accent, 30% );
+
+		&:hover{
+			background-color: lighten( $color__accent, 6% );
+		}
+
+		&:active{
+			background-color: darken( $color__accent, 6% );
+		}		
+	}
+}
+
+/**
+* Tablet adjustment
+*/
+@media screen and ( min-width: $size__breakpoint-tablet ){
+	.button,
+	button,
+	input[type="button"],
+	input[type="reset"],
+	input[type="submit"] {
+		@include font-size( 1.4 );
+	}
+}

@@ -1,0 +1,115 @@
+.hentry .entry-meta .entry-read-more-pointer {
+	background: none repeat scroll 0 0 padding-box #1b39a8; // color
+	border-radius: 50%;
+	color: white;
+	display: block;
+	font-family: "Material Design Iconic Font";
+	font-size: 2rem;
+	height: 50px;
+	line-height: 1;
+	padding: 16px 0;
+	position: absolute;
+	right: 25px;
+	text-align: center;
+	top: -26px;
+	width: 50px;
+	// box-shadow: 0 0 5px rgba(0,0,0,0.3); // tiny shadow to make it not flat
+	box-shadow: 0 0 0 rgba(0, 0, 0, 0.2);
+	@include transition_duration( 0.3s );
+}
+
+.hentry .entry-meta .entry-read-more-pointer:hover {
+	background: none repeat scroll 0 0 #1b39a8; // color
+	// box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); // changed box shadow
+	box-shadow: 0 25px 55px 0 rgba(0, 0, 0, 0.21), 0 16px 28px 0 rgba(0, 0, 0, 0.22);
+	transform: rotate(360deg);
+	@include transition_duration( 0.2s );
+}
+
+.button, 
+button, 
+input[type="button"], 
+input[type="reset"], 
+input[type="submit"] {
+	background: none repeat scroll 0 0 #1b39a8; // color
+	border: medium none;
+	border-radius: 3px;
+	// box-shadow: 0 2px 5px rgba(0,0,0,.4); // changed box shadow to make it more "materialish"
+	box-shadow: 0 0 0 rgba(0, 0, 0, 0.2);	
+	color: white;
+	cursor: pointer;
+	font-size: 1.2rem;
+	line-height: 1;
+	padding: 1em 1.4em;
+	text-transform: uppercase;
+	@include transition_duration( 0.3s );
+}
+
+.button:hover, 
+button:hover, 
+input[type="button"]:hover, 
+input[type="reset"]:hover, 
+input[type="submit"]:hover {
+	background-color: #1b39a8; // color
+	// box-shadow: 0 9px 30px 3px rgba(0, 0, 0, 0.46); // changed box shadow
+	box-shadow: 0 25px 55px 0 rgba(0, 0, 0, 0.21), 0 16px 28px 0 rgba(0, 0, 0, 0.22);
+	color: white;
+	@include transition_duration( 0.2s );
+}
+
+.hentry {
+	background: none repeat scroll 0 0 #fff;
+	border-bottom: none; // removed bottom line ( paper doesn't have solid borders)
+	box-shadow: 0 2px 5px rgba(0,0,0,.4); // changed box shadow
+	display: inline-block;
+	height: 450px;
+	margin: 0;
+	position: relative;
+	vertical-align: top;
+}
+
+// <------//css colors ----->
+
+#masthead {
+	background: none repeat scroll 0 0 #fff;// bkgrnd color
+	color: #1b39a8; //color
+	padding-top: 50px;
+}
+
+#masthead a {
+	color: #2196F3; //*color
+}
+
+#masthead .site-title a:hover {
+	opacity: 1; //opacity full
+	color: #02a8f3;//color
+}
+
+#masthead .site-description {
+	font-size: 1.2rem;
+	font-weight: 300;
+	opacity: 1; //* full opacity
+	text-align: center;
+}
+
+body.scrolling #top-navigation {
+	background: none repeat scroll 0 0 #1b39a8; //* color
+	box-shadow: 0 1px 4px #333;
+}
+
+// <--------*home ".hentry cards" background should be color #02a8f3
+// then home cards:--------->
+
+.entry-title a {
+	text-decoration: none;
+	color: #white;
+}
+.entry-title a:hover {
+	color: white;
+	text-decoration: none;
+}
+
+.entry-meta a {
+	color: #212121; //* color
+	text-decoration: none;
+}

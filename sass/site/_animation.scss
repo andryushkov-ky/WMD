@@ -1,0 +1,82 @@
+// Animation stuffs
+.home,
+.archive,
+.search,
+.author{
+	.hentry.has-post-thumbnail .entry-thumbnail img,
+	.hentry,
+	.hentry .entry-options a{
+		-webkit-transition: all .3s ease-out;
+		-moz-transition: all .3s ease-out ;
+		-ms-transition: all .3s ease-out ;
+		-o-transition: all .3s ease-out ;
+		transition: all .3s ease-out ;
+	}
+	
+	.hentry:hover{
+		box-shadow: 0 6px 20px #AFAFAF;
+	}
+
+	.entry-title a{
+		-webkit-transition: all 0.3s ease-out;
+		-moz-transition: all 0.3s ease-out ;
+		-ms-transition: all 0.3s ease-out ;
+		-o-transition: all 0.3s ease-out ;
+		transition: all 0.3s ease-out ;		
+	}
+}
+
+.social-links a{
+	@include transition_duration( 0.3s );
+}
+
+.drawer-navigation li a{
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out ;
+	-ms-transition: all 0.3s ease-out ;
+	-o-transition: all 0.3s ease-out ;
+	transition: all 0.3s ease-out ;
+}
+
+.post-navigation .nav a,
+.mdb-service-item,
+.material-input-wrap.focusout:after,
+.material-input-wrap.focus:after,
+.material-input-wrap.focus label,
+.material-input-wrap.focusout label{
+	-webkit-transition: all .3s ease-out;
+	-moz-transition: all .3s ease-out ;
+	-ms-transition: all .3s ease-out ;
+	-o-transition: all .3s ease-out ;
+	transition: all .3s ease-out ;	
+}
+
+// Ripple effect
+.rippling-wrap{
+	&.circle{
+		@include border-radius( 50% );
+		overflow: hidden;
+	}
+
+	&.toggle-top-nav{
+		@include border-radius( 50% );
+		padding: 20px;
+		margin-top: -4px;
+		margin-left: -4px;
+	}
+}
+
+.rippling{
+	@include border-radius( 50% );
+	-webkit-animation-name: ripple-animation;
+	      animation-name: ripple-animation;		
+	-webkit-animation-duration: 1s;
+	      animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	      animation-fill-mode: both;
+
+	&.small{
+		-webkit-animation-name: ripple-animation-small;
+		      animation-name: ripple-animation-small;		
+	}
+}

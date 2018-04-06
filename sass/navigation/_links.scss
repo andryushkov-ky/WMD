@@ -1,0 +1,9 @@
+a {
+	color: $color__accent;
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: $color__accent;
+	}
+}

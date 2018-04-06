@@ -1,0 +1,163 @@
+@import "mixins/mixins-master";
+
+/* Fonts */
+$font__main: 'Roboto', Helvetica, Arial, sans-serif;
+
+/* Colors */ 
+$color__main: #40A9F2;
+
+html,
+body{
+	background: white;
+	font-family: $font__main;
+	font-weight: lighter;
+}
+
+.login{
+	h1{
+		a{
+			background: url(images/login-site-logo.png);
+			display: block;
+			width: 250px !important;
+			height: 87px;
+			margin: 0 auto 20px;
+		}
+	}
+	
+	#login_error,
+	.message{
+		margin-bottom: 20px;
+		box-shadow: none;
+		text-align: center;
+		box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+	}
+
+	#login{
+		form{
+			box-shadow: none;
+			padding-top: 0;
+			margin-top: 0;
+
+			label{
+				font-weight: lighter;
+				font-size: 14px;
+			}
+
+			.input{
+				background: white;
+				box-shadow: none;
+				border: none;
+				border-bottom: 1px solid #ccc;
+				font-family: $font__main;
+				font-weight: lighter;
+
+				&:focus{
+					outline: 0;
+					border-bottom: 2px solid $color__main;
+					margin-bottom: 15px;
+				}
+			}
+
+			.forgetmenot{
+				margin-top: 10px;
+			}
+
+			#rememberme{
+				box-shadow: none;
+				border-color: #dfdfdf;
+					
+				&:focus{
+					outline: 0;
+					border-color: $color__main;
+				}
+			}
+
+			.forgetmenot{
+				float: none;
+			}
+
+			p.submit{
+				margin-top: 30px;
+
+				.button-primary{
+					float: none;
+					// box-shadow: none;
+					box-shadow: 0 0 0 rgba(0, 0, 0, 0.2);
+					border: none;
+					font-family: $font__main;
+					font-weight: lighter;
+					padding: 3px 0;
+					height: 40px;
+					width: 100%;
+					border-radius: 3px;
+					font-weight: 16px;
+					background: $color__main;
+					@include transition_duration( 0.3s );
+
+					&:hover{
+						color: white;
+						// box-shadow: 0 4.5px 15px 1.5px rgba(0, 0, 0, 0.3);
+						box-shadow: 0 25px 55px 0 rgba(0, 0, 0, 0.21), 0 16px 28px 0 rgba(0, 0, 0, 0.22);
+						@include transition_duration( 0.2s );
+					}
+	
+					&:active{
+						background-color: darken( $color__main, 15% );
+					}
+
+					&:focus{
+						outline: 0;
+						color: white;
+						box-shadow: 0 4.5px 15px 1.5px rgba(0, 0, 0, 0.3);
+						
+						&:active{
+							background-color: darken( $color__main, 15% );
+						}						
+					}				
+				}
+			}
+		}		
+	}
+
+	form{
+		overflow: visible;
+	}
+
+	.contextual-nav{
+		text-align: center;
+		margin-top: 20px;
+		font-size: 15px;
+
+		a{
+			text-decoration: none;
+			color: #1b39a8;
+
+			&:hover{
+				color: #40A9F2;
+			}
+		}
+	}
+
+	#nav{
+		font-weight: normal;
+		font-size: 15px;
+		color: white;
+		margin-left: -10px;
+
+		a{
+			color: #1b39a8;
+		}
+	}
+}
+
+.login-action-lostpassword{
+	#nav{
+		color: #999;
+	}
+}
+
+#nav,
+#backtoblog{
+	text-align: center;
+	color: #999;
+}

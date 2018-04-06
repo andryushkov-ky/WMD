@@ -1,0 +1,45 @@
+hr {
+	background-color: $color__background-hr;
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.5em;
+}
+
+@import "lists";
+
+img {
+	height: auto; /* Make sure images are scaled correctly. */
+	max-width: 100%; /* Adhere to container width. */
+}
+
+figure {
+	margin: 0;
+}
+
+@import "tables";
+
+// Miscellaneous
+.text-display-4 {
+	font-size:112px;
+	font-weight:300;
+	letter-spacing:-5px;
+	line-height:128px;
+}
+
+.text-display-3 {
+	font-size:56px;
+	font-weight:400;
+	line-height:64px;
+}
+
+.text-display-2 {
+	font-size:45px;
+	font-weight:400;
+	line-height:64px;
+}
+
+.text-display-1 {
+	font-size:34px;
+	font-weight:400;
+	line-height:52px;
+}

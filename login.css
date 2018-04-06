@@ -1,0 +1,136 @@
+/* Fonts */
+/* Colors */
+html,
+body {
+  background: white;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: lighter;
+}
+
+.login h1 a {
+  background: url(images/login-site-logo.png);
+  display: block;
+  width: 250px !important;
+  height: 87px;
+  margin: 0 auto 20px;
+}
+.login #login_error,
+.login .message {
+  margin-bottom: 20px;
+  box-shadow: none;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+.login #login form {
+  box-shadow: none;
+  padding-top: 0;
+  margin-top: 0;
+}
+.login #login form label {
+  font-weight: lighter;
+  font-size: 14px;
+}
+.login #login form .input {
+  background: white;
+  box-shadow: none;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: lighter;
+}
+.login #login form .input:focus {
+  outline: 0;
+  border-bottom: 2px solid #40A9F2;
+  margin-bottom: 15px;
+}
+.login #login form .forgetmenot {
+  margin-top: 10px;
+}
+.login #login form #rememberme {
+  box-shadow: none;
+  border-color: #dfdfdf;
+}
+.login #login form #rememberme:focus {
+  outline: 0;
+  border-color: #40A9F2;
+}
+.login #login form .forgetmenot {
+  float: none;
+}
+.login #login form p.submit {
+  margin-top: 30px;
+}
+.login #login form p.submit .button-primary {
+  float: none;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.2);
+  border: none;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: lighter;
+  padding: 3px 0;
+  height: 40px;
+  width: 100%;
+  border-radius: 3px;
+  font-weight: 16px;
+  background: #40A9F2;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -ms-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.login #login form p.submit .button-primary:hover {
+  color: white;
+  box-shadow: 0 25px 55px 0 rgba(0, 0, 0, 0.21), 0 16px 28px 0 rgba(0, 0, 0, 0.22);
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -ms-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+.login #login form p.submit .button-primary:active {
+  background-color: #0f85d7;
+}
+.login #login form p.submit .button-primary:focus {
+  outline: 0;
+  color: white;
+  box-shadow: 0 4.5px 15px 1.5px rgba(0, 0, 0, 0.3);
+}
+.login #login form p.submit .button-primary:focus:active {
+  background-color: #0f85d7;
+}
+.login form {
+  overflow: visible;
+}
+.login .contextual-nav {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 15px;
+}
+.login .contextual-nav a {
+  text-decoration: none;
+  color: #1b39a8;
+}
+.login .contextual-nav a:hover {
+  color: #40A9F2;
+}
+.login #nav {
+  font-weight: normal;
+  font-size: 15px;
+  color: white;
+  margin-left: -10px;
+}
+.login #nav a {
+  color: #1b39a8;
+}
+
+.login-action-lostpassword #nav {
+  color: #999;
+}
+
+#nav,
+#backtoblog {
+  text-align: center;
+  color: #999;
+}
