@@ -23,28 +23,34 @@
 
 	<nav id="top-navigation">
 		<a href="#drawer" data-target-id="drawer" id="toggle-drawer" class="genericon genericon-menu no-animation toggle-button ripple-effect" data-ripple-wrap-class="toggle-top-nav" data-ripple-mode="fixed"><span class="label"><?php _e( 'Navigation', 'materialdesignblog' ); ?></span></a>
-		<?php mdb_site_logo( 'site_logo_top_nav' ); ?>
+
+    <a href="/" class="site-logo-link ripple-effect site-logo-ico" data-ripple-mode="fixed">
+<!--      <img src="http://materialdesignblog.com/wp-content/uploads/2015/02/logom.png">-->
+      <div class="logo-img-box"></div>
+      <div class="logo-text-box"></div>
+    </a>
+
+
 		<h3 class="site-title-nav"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h3>
 		
-		<a href="#login-links" id="toggle-login-links" class="fa fa-ellipsis-v"><span class="label"><?php _e( 'Login / Register' ); ?></span></a>
+		<a href="#login-links" id="toggle-login-links" class="fa fa-ellipsis-v"><span class="label"><?php _e( 'ICO / Guides' ); ?></span></a>
 		<ul id="login-links">
-			<?php if( is_user_logged_in() ) : ?>
-				<li><a href="<?php echo esc_url( home_url( '/post-new/' ) ); ?>" title="<?php _e( 'Submit Article' ); ?>"><?php _e( 'Submit Article' ); ?></a></li>
-				<li><a href="<?php echo wp_logout_url( mdb_current_url() ); ?>" title="<?php _e( "Logout" ); ?>"><?php _e( 'Logout' ); ?></a></li>
-			<?php else : ?>
-				<li><a href="<?php echo esc_url( add_query_arg( array( 'redirect_to' => urlencode( mdb_current_url() ) ), home_url( '/wp-login.php' ) ) ); ?>" title="<?php _e( 'Login' ); ?>"><?php _e( 'Login' ); ?></a></li>
-				<li><a href="<?php echo esc_url( home_url( 'wp-login.php?action=register' ) ); ?>" title="<?php _e( 'Register' ); ?>"><?php _e( 'Register' ); ?></a></li>
-			<?php endif; ?>
+      <li>
+        <a href="https://icoanatomy.com/rating" title="ICO">ICO</a>
+      </li>
+      <li>
+        <a href="https://icoanatomy.com/guides" title="Guides">Guides</a>
+      </li>
 		</ul>
 	</nav>
 
 
 
 
-	<header id="masthead" class="<?php mdb_masthead_classes(); ?>" itemscope="itemscope" itemtype="http://schema.org/WPHeader" role="banner" <?php mdb_masthead_background(); ?>>
+	<header id="masthead" class="<?php mdb_masthead_classes(); ?>" itemscope="itemscope" itemtype="http://schema.org/WPHeader" role="banner">
 		<?php mdb_site_branding(); ?>
 		
-		<div class="shadow"></div>
+<!--		<div class="shadow"></div>-->
 	</header><!-- #masthead -->
 	
 	<?php if ( is_mdb_author_current_user() || is_mdb_page( 'edit-profile' ) ) : ?>

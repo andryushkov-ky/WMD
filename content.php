@@ -52,12 +52,17 @@ global $post;
 		<a href="<?php the_permalink(); ?>" title="<?php printf( __( 'Read more of %s', 'materialdesignblog' ), strip_tags( get_the_title( get_the_ID() ) ) ); ?>" class="entry-read-more-pointer" data-ripple-limit=".hentry"><span class="default">&#xf29c;</span></a>
 		
 		<span class="entry-author-wrap">
-			<a href="<?php echo esc_url( get_author_posts_url( $post->post_author ) ); ?>" class="entry-author">
-				<?php
-					echo get_avatar( get_the_author_meta( 'user_email' ), 50 ); 
-				?>			
-			</a>			
-			<a href="<?php echo esc_url( get_author_posts_url( $post->post_author ) ); ?>" class="entry-author-name" itemprop="author"><?php the_author(); ?></a>			
+			<div class="entry-author">
+				<div class="ico-avatar"></div>
+			</div>
+			<div class="entry-author-name" itemprop="author">ICOAnatomy</div>
+
+<!--      <a href="--><?php //echo esc_url( get_author_posts_url( $post->post_author ) ); ?><!--" class="entry-author">-->
+<!--				--><?php
+//        echo get_avatar( get_the_author_meta( 'user_email' ), 50 );
+//        ?>
+<!--			</a>-->
+<!--			<a href="--><?php //echo esc_url( get_author_posts_url( $post->post_author ) ); ?><!--" class="entry-author-name" itemprop="author">--><?php //the_author(); ?><!--</a>			-->
 		</span>
 		<?php mdb_posted_on(); ?>
 	</div>

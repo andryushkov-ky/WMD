@@ -330,14 +330,16 @@
 	?>
 		
 		<!-- BEGIN MAIN MENU BUTTON -->
-		<?php if( get_option('bonfire_morph_hide_main_menu_button') ) { ?>
-		<?php } else { ?>
-		<div class="morph-main-menu-button-wrapper<?php if ( is_admin_bar_showing() ) { ?> wp-toolbar-active<?php } ?><?php if( get_option('bonfire_morph_absolute_position') ) { ?> morph-absolute<?php } ?>">
-			<div class="morph-main-menu-button">
-				<div class="morph-main-menu-button-middle"></div>
-			</div>
-		</div>
-		<?php } ?>
+<!--    --><?php //if( is_user_logged_in() ) { ?>
+<!--      --><?php //if( get_option('bonfire_morph_hide_main_menu_button') ) { ?>
+<!--      --><?php //} else { ?>
+<!--      <div class="morph-main-menu-button-wrapper--><?php //if ( is_admin_bar_showing() ) { ?><!-- wp-toolbar-active--><?php //} ?><!----><?php //if( get_option('bonfire_morph_absolute_position') ) { ?><!-- morph-absolute--><?php //} ?><!--">-->
+<!--        <div class="morph-main-menu-button">-->
+<!--          <div class="morph-main-menu-button-middle"></div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      --><?php //} ?>
+<!--		--><?php //} ?>
 		<!-- END MAIN MENU BUTTON -->
 
 		<!-- BEGIN MAIN WRAPPER -->

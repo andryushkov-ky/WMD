@@ -38,15 +38,13 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-			<?php printf( __( '&copy; %s Yourwebsitename.com, All rights reserved', 'mateiraldesignblog' ), date( 'Y' ) ); ?><div itemscope itemtype=""https://schema.org/AboutPage">
-   <a itemprop="url" href="http://yoursiteurl.com">About us</a>
-   
-   <a itemprop="url" href="http://yoursiteurl.com">Page1</a>
-   
-   <a itemprop="url" href="http://yoursiteurl.com">Page2</a>
-   <br>
-<img itemprop="logo" src="http://yourlogoimageurlgoeshere.com" width="210" height="73"/>
-</div>
+			<?php printf( __( '&copy; %s News.icoanatomy.com, All rights reserved', 'mateiraldesignblog' ), date( 'Y' ) ); ?>
+      <div class="ico-footer">
+        <div class="ico-footer-logo-box">
+          <div class="ico-footer-logo-img"></div>
+          <div class="logo-footer-logo-text"></div>
+        </div>
+      </div>
 
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->

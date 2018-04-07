@@ -5,6 +5,29 @@
 	@include font-size( 1.4 );
 }
 
+.ico-footer {
+  margin-top: 5px;
+}
+
+.ico-footer-logo-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ico-footer-logo-img {
+  width: 43px;
+  height: 50px;
+  background: url(images/logosvg.svg) no-repeat 0 0;
+}
+
+.logo-footer-logo-text {
+  margin-left: 15px;
+  height: 20px;
+  width: 180px;
+  background: url(images/logo-text-blue.svg) no-repeat 0 0;
+}
+
 /**
 * Tablet adjustment
 */

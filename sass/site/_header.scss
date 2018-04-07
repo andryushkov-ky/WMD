@@ -179,6 +179,35 @@ body{
 	}
 }
 
+.logo-text-box {
+	display: none;
+	margin-left: 15px;
+	height: 50px;
+	width: 120px;
+	background: url(images/logo-text.svg) no-repeat 0 0;
+}
+
+.logo-img-box {
+	width: 43px;
+	height: 50px;
+	background: url(images/logosvg.svg) no-repeat 0 0;
+}
+
+.site-logo-ico {
+	padding-top: 8px;
+}
+
+.ico-site-logo-wrap {
+	display: flex;
+	justify-content: center;
+}
+
+.ico-site-logo-center {
+	width: 112px;
+	height: 130px;
+	background: url(images/logosvg.svg) no-repeat 0 0;
+}
+
 /**
 * Tablet adjustment
 */

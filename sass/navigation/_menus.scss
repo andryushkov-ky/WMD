@@ -3,7 +3,7 @@
 	top: 0;
 	left: 0;
 	right: 0;
-	padding: 21px 20px 19px;
+	//padding: 21px 20px 19px;
 	z-index: 50;
 	text-align: center;
 
@@ -47,7 +47,6 @@
 	}
 
 	.site-logo-link{
-		height: 26px;
 		display: none;
 		line-height: .8;
 		overflow: hidden;
@@ -144,7 +143,8 @@ body{
 	&.scrolling{
 		#top-navigation{
 			// background: $color__accent_darker;
-			background: #1b39a8;
+			min-height: 66px;
+			background: #3a4457;
 			box-shadow: 0 1px 4px #333;
 
 			.site-title-nav{
@@ -152,7 +152,7 @@ body{
 			}
 
 			.site-logo-link{
-				display: inline-block;
+				display: inline-flex;
 			}
 
 			.toggle-button{
@@ -327,7 +327,7 @@ body{
 */
 @media screen and ( min-width: $size__breakpoint-tablet ){
 	#top-navigation{
-		padding: 20px;
+		//padding: 20px;
 
 		.site-title-nav{
 			@include font-size( 2.4 );

@@ -15,6 +15,9 @@
 function mdb_site_branding(){
 	?>
 		<div class="site-branding">
+      <a href="/" class="ripple-effect ico-site-logo-wrap" data-ripple-limit="#masthead" data-ripple-color="#40A9F2">
+        <div class="ico-site-logo-center"></div>
+      </a>
 			<?php if ( is_author() ) : ?>
 
 				<?php
@@ -119,7 +122,7 @@ function mdb_site_branding(){
 				<?php if ( ! is_mdb_page( 'post-new' ) && ! is_mdb_page( 'posts-list' ) ) : ?>
 
 					<h1 class="site-title" itemprop="headline" ><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="ripple-effect" data-ripple-limit="#masthead"><?php bloginfo( 'name' ); ?></a></h1>
-					<h2 class="site-description" itemprop="description"><?php bloginfo( 'description' ); ?></h2>
+<!--					<h2 class="site-description" itemprop="description">--><?php //bloginfo( 'description' ); ?><!--</h2>-->
 
 				<?php endif; ?>
 
