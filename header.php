@@ -33,13 +33,16 @@
 
 		<h3 class="site-title-nav"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h3>
 		
-		<a href="#login-links" id="toggle-login-links" class="fa fa-ellipsis-v"><span class="label"><?php _e( 'ICO / Guides' ); ?></span></a>
+		<a href="#login-links" id="toggle-login-links" class="fa fa-ellipsis-v"><span class="label"><?php _e( 'ICO / News / Guides' ); ?></span></a>
 		<ul id="login-links">
       <li>
         <a href="https://icoanatomy.com/rating" title="ICO">ICO</a>
       </li>
-      <li>
-        <a href="https://icoanatomy.com/guides" title="Guides">Guides</a>
+      <li class="<?php if(is_category() && single_cat_title( '', false ) == "Guides") {echo "top-link-active";} ?>">
+        <a href="/category/guides" title="Guides">Guides</a>
+      </li>
+      <li class="<?php if(!is_category() || single_cat_title( '', false ) == "News") {echo "top-link-active";} ?>">
+        <a href="/category/news" title="News">News</a>
       </li>
 		</ul>
 	</nav>

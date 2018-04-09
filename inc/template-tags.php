@@ -121,18 +121,25 @@ function mdb_site_branding(){
 				
 				<?php if ( ! is_mdb_page( 'post-new' ) && ! is_mdb_page( 'posts-list' ) ) : ?>
 
-					<h1 class="site-title" itemprop="headline" ><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="ripple-effect" data-ripple-limit="#masthead"><?php bloginfo( 'name' ); ?></a></h1>
-<!--					<h2 class="site-description" itemprop="description">--><?php //bloginfo( 'description' ); ?><!--</h2>-->
+					<h1 class="site-title" itemprop="headline" >
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="ripple-effect" data-ripple-limit="#masthead">
+            <?php if(is_category()) {
+                echo "ICOAnatomy ", single_cat_title( '', false );
+              } else {
+                echo "ICOAnatomy News";
+              };
+            ?>
+            </a>
+          </h1>
 
 				<?php endif; ?>
 
-				<?php if( is_home() && ! ( is_mdb_page( 'post-new' ) || is_mdb_page( 'posts-list' ) ) ): ?>
 				<ul class="author-social-links">
-					<li><a href="<?php echo esc_url( get_option( 'twitter_url', 'http://twitter.com/materialdesignblog' ) ); ?>" class="genericon twitter genericon-twitter ripple-effect" data-ripple-wrap-class="circle"><span class="label">Twitter</span></a></li>
-					<li><a href="<?php echo esc_url( get_option( 'facebook_url', 'http://facebook.com/materialdesignblog' ) ); ?>" class="genericon facebook genericon-facebook-alt ripple-effect" data-ripple-wrap-class="circle"><span class="label">Facebook</span></a></li>
-					<li><a href="<?php echo esc_url( get_option( 'googleplus_url', 'http://facebook.com/materialdesignblog' ) ); ?>" class="genericon googleplus genericon-googleplus-alt ripple-effect" data-ripple-wrap-class="circle"><span class="label">Youtube</span></a></li>			
+					<li><a href="https://twitter.com/icoanatomy" class="genericon twitter genericon-twitter ripple-effect" data-ripple-wrap-class="circle"><span class="label">Twitter</span></a></li>
+					<li><a href="https://www.facebook.com/ICOAnatomy-957837074381494/" class="genericon facebook genericon-facebook-alt ripple-effect" data-ripple-wrap-class="circle"><span class="label">Facebook</span></a></li>
+					<li><a href="https://www.linkedin.com/company/icoanatomy/" class="genericon linkedin genericon-linkedin-alt ripple-effect" data-ripple-wrap-class="circle"><span class="label">LinkedIn</span></a></li>
+					<li><a href="https://t.me/icoanatomy" class="telegram genericon-telegram-alt ripple-effect" data-ripple-wrap-class="circle"><span class="label">Telegram</span></a></li>
 				</ul>
-				<?php endif; ?>
 				
 			<?php endif; ?>
 		</div><!-- .site-branding -->

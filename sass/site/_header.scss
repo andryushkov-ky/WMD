@@ -80,6 +80,8 @@
 }
 
 .author-social-links{
+	display: flex;
+	justify-content: center;
 	margin: 40px 0 0;
 	padding: 0;
 	text-align: center;
@@ -203,8 +205,9 @@ body{
 }
 
 .ico-site-logo-center {
-	width: 112px;
-	height: 130px;
+	margin-bottom: 5px;
+	width: 56px;
+	height: 65px;
 	background: url(images/logosvg.svg) no-repeat 0 0;
 }
 
@@ -222,7 +225,7 @@ body{
 		}
 
 		.site-title{
-			@include font-size( 5.4 );
+			@include font-size( 4 );
 		}
 
 		.site-description{
@@ -237,6 +240,11 @@ body{
 					padding: 10px;					
 				}
 			}
+		}
+
+		.ico-site-logo-center {
+			width: 90px;
+			height: 104px;
 		}
 	}
 }

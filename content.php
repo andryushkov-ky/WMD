@@ -27,11 +27,14 @@ global $post;
 		<div class="sliding-content" data-direction="bottom">
 			<a href="#" data-target-id="entry-options-<?php the_ID(); ?>" class="toggle-button close genericon genericon-close-alt"><span class="label"><?php _e( 'Close', 'materialdesignblog' ); ?></span></a>
 			<h3><?php _e( 'Share this with your friends:', 'materialdesignblog' ); ?></h3>
-			<ul>
+			<ul class="entry-options-share-ul">
 				<li><a onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" href="https://facebook.com/sharer/sharer.php?u=<?php echo urlencode( get_permalink() ); ?>" class="genericon facebook genericon-facebook-alt"><span class="label">Facebook</span></a></li>
 				<li><a onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" href="http://twitter.com/share?url=<?php echo urlencode( get_permalink() )?>" class="genericon twitter genericon-twitter"><span class="label">Twitter</span></a></li>
-				<li><a onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" href="https://plus.google.com/share?url=<?php echo urlencode( get_permalink() ); ?>" class="genericon googleplus genericon-googleplus-alt"><span class="label">Google+</span></a></li>
-			</ul>			
+				<li><a onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" href="https://www.linkedin.com/shareArticle?mini=true&url=<?php echo urlencode( get_permalink() ); ?>" class="genericon linkedin genericon-linkedin-alt"><span class="label">LinkedIn</span></a></li>
+				<li><a onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" href="https://telegram.me/share/url?url=<?php echo urlencode( get_permalink() ); ?>" class="genericon telegram genericon-telegram-alt"><span class="label">Telegram</span></a></li>
+        <li><a onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" href="https://plus.google.com/share?url=<?php echo urlencode( get_permalink() ); ?>" class="genericon googleplus genericon-googleplus-alt"><span class="label">Google+</span></a></li>
+				<li><a onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" href="http://www.reddit.com/submit?url=<?php echo urlencode( get_permalink() ); ?>" class="genericon reddit genericon-reddit"><span class="label">Reddit</span></a></li>
+			</ul>
 		</div>
 	</div>
 	
