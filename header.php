@@ -25,7 +25,6 @@
 		<a href="#drawer" data-target-id="drawer" id="toggle-drawer" class="genericon genericon-menu no-animation toggle-button ripple-effect" data-ripple-wrap-class="toggle-top-nav" data-ripple-mode="fixed"><span class="label"><?php _e( 'Navigation', 'materialdesignblog' ); ?></span></a>
 
     <a href="/" class="site-logo-link ripple-effect site-logo-ico" data-ripple-mode="fixed">
-<!--      <img src="http://materialdesignblog.com/wp-content/uploads/2015/02/logom.png">-->
       <div class="logo-img-box"></div>
       <div class="logo-text-box"></div>
     </a>
@@ -38,10 +37,10 @@
       <li>
         <a href="https://icoanatomy.com/rating" title="ICO">ICO</a>
       </li>
-      <li class="<?php if(is_category() && single_cat_title( '', false ) == "Guides") {echo "top-link-active";} ?>">
+      <li class="<?php if(is_category() && single_cat_title('', false ) == "Guides") {echo "top-link-active";} ?>">
         <a href="/category/guides" title="Guides">Guides</a>
       </li>
-      <li class="<?php if(!is_category() || single_cat_title( '', false ) == "News") {echo "top-link-active";} ?>">
+      <li class="<?php if($_SERVER[REQUEST_URI] == "/" || stripos($_SERVER[REQUEST_URI], '/page') === 0 || stripos($_SERVER[REQUEST_URI], '/news/page') !== FALSE || (is_category() && single_cat_title('', false ) == "News")) {echo "top-link-active";} ?>">
         <a href="/category/news" title="News">News</a>
       </li>
 		</ul>
