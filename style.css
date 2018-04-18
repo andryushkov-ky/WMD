@@ -7676,7 +7676,7 @@ h1, h2, h3, h4, h5, h6 {
 .entry-content h1 {
   font-size: 24px;
   font-size: 2.4rem;
-  color: #2196F3;
+  color: #f16f50;
   line-height: 1.2;
   margin-top: 1em;
   margin-bottom: .4em;
@@ -7702,7 +7702,7 @@ h1, h2, h3, h4, h5, h6 {
 .entry-content h2 {
   font-size: 19px;
   font-size: 1.9rem;
-  color: #2196F3;
+  color: #f16f50;
   line-height: 1.3;
   margin-top: 1em;
   margin-bottom: .4em;
@@ -7727,7 +7727,7 @@ h1, h2, h3, h4, h5, h6 {
 .entry-content h3 {
   font-size: 16px;
   font-size: 1.6rem;
-  color: #2196F3;
+  color: #f16f50;
   line-height: 1.3;
   margin-top: 1em;
   margin-bottom: .4em;
@@ -7737,7 +7737,7 @@ h1, h2, h3, h4, h5, h6 {
 .comment-body h4,
 .entry-content h4 {
   font-weight: 300;
-  color: #2196F3;
+  color: #f16f50;
   line-height: 1.4;
   margin-top: .4em;
   margin-bottom: .4em;
@@ -7747,11 +7747,11 @@ h1, h2, h3, h4, h5, h6 {
 .comment-body a,
 .entry-content a {
   text-decoration: none;
-  color: #02a8f3;
+  color: #fb8954;
 }
 .comment-body a:hover,
 .entry-content a:hover {
-  color: #1b39a8;
+  color: #f16f50;
 }
 .comment-body p,
 .entry-content p {
@@ -7761,7 +7761,7 @@ h1, h2, h3, h4, h5, h6 {
 .entry-content b,
 .entry-content strong {
   font-weight: 700;
-  color: #2196F3;
+  color: #f16f50;
 }
 .comment-body dfn, .comment-body cite, .comment-body em, .comment-body i,
 .entry-content dfn,
@@ -7791,7 +7791,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 1em;
   font-style: italic;
   line-height: 1.4;
-  color: #2196F3;
+  color: #f16f50;
 }
 .comment-body pre,
 .entry-content pre {
@@ -7811,7 +7811,7 @@ h1, h2, h3, h4, h5, h6 {
 .entry-content tt,
 .entry-content var {
   font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-  color: #2196F3;
+  color: #f16f50;
 }
 .comment-body code,
 .entry-content code {
@@ -8061,7 +8061,7 @@ input[type="submit"] {
   color: rgba(0, 0, 0, 0.8);
   cursor: pointer;
   /* Improves usability and consistency of cursor style between image-type 'input' and others */
-  background: #40A9F2;
+  background: #F2704A;
   font-size: 12px;
   font-size: 1.2rem;
   line-height: 1;
@@ -8095,7 +8095,7 @@ button:active,
 input[type="button"]:active,
 input[type="reset"]:active,
 input[type="submit"]:active {
-  background-color: #32a3f1;
+  background-color: #f1653c;
 }
 .button:focus,
 button:focus,
@@ -8103,22 +8103,22 @@ input[type="button"]:focus,
 input[type="reset"]:focus,
 input[type="submit"]:focus {
   outline: none;
-  background-color: #1094ef;
-  box-shadow: 0 2px 2px #0a598f;
+  background-color: #ef4a1a;
+  box-shadow: 0 2px 2px #982b0b;
 }
 .button:focus:hover,
 button:focus:hover,
 input[type="button"]:focus:hover,
 input[type="reset"]:focus:hover,
 input[type="submit"]:focus:hover {
-  background-color: #5db6f4;
+  background-color: #f48767;
 }
 .button:focus:active,
 button:focus:active,
 input[type="button"]:focus:active,
 input[type="reset"]:focus:active,
 input[type="submit"]:focus:active {
-  background-color: #239cf0;
+  background-color: #f0592d;
 }
 
 /**
@@ -8181,9 +8181,9 @@ input[type="search"]:focus,
 textarea:focus {
   color: #111;
   outline: none;
-  border-color: #40A9F2;
+  border-color: #F2704A;
   background: #fdfdfd;
-  box-shadow: inset 0 -1px 0 #40A9F2;
+  box-shadow: inset 0 -1px 0 #F2704A;
 }
 
 input[disabled="disabled"] {
@@ -8213,7 +8213,7 @@ input[disabled="disabled"] {
   left: 0;
   right: 100%;
   height: 2px;
-  background: #40A9F2;
+  background: #F2704A;
 }
 .material-input-wrap.filled:after, .material-input-wrap.focus:after {
   right: 0;
@@ -8222,7 +8222,7 @@ input[disabled="disabled"] {
   left: 0;
   top: 0;
   font-size: 12px !important;
-  color: #40A9F2 !important;
+  color: #F2704A !important;
   font-weight: 700;
 }
 .material-input-wrap.focusout:after {
@@ -8256,10 +8256,10 @@ textarea {
 5.1 Links
 --------------------------------------------------------------*/
 a {
-  color: #40A9F2;
+  color: #F2704A;
 }
 a:hover, a:focus, a:active {
-  color: #40A9F2;
+  color: #F2704A;
 }
 
 /*--------------------------------------------------------------
@@ -8281,7 +8281,7 @@ a:hover, a:focus, a:active {
   font-size: 24px;
   width: 24px;
   height: 24px;
-  color: #2196F3;
+  color: #f16f50;
   display: none;
 }
 #top-navigation .toggle-button:hover {
@@ -8327,7 +8327,7 @@ body .morph-main-menu-button {
   font-size: 20px;
   font-size: 2rem;
   text-decoration: none;
-  color: #1b39a8;
+  color: #f16f50;
   position: absolute;
   top: 12px;
   right: 0;
@@ -8379,7 +8379,7 @@ body .morph-main-menu-button {
   text-decoration: none;
   padding: 5px 18px;
   width: 150px;
-  color: #005ab1;
+  color: #f2704a;
   -webkit-transition-duration: 0.3s;
   -moz-transition-duration: 0.3s;
   -ms-transition-duration: 0.3s;
@@ -8446,7 +8446,7 @@ body.admin-bar.scrolling #top-navigation {
   bottom: 0;
   left: 0;
   height: 3px;
-  background: #005ab1;
+  background: #f2704a;
   content: '';
 }
 #page-tab-nav li a:hover {
@@ -8491,7 +8491,7 @@ body.admin-bar.scrolling #top-navigation {
 }
 
 .top-link-active {
-  border-left: 3px solid #5386e4;
+  border-left: 3px solid #f16f50;
 }
 
 /**
@@ -8525,7 +8525,7 @@ body.admin-bar.scrolling #top-navigation {
   }
 
   .top-link-active {
-    border-bottom: 3px solid #5386e4;
+    border-bottom: 3px solid #f16f50;
     padding-bottom: 13px;
     border-left: none;
   }
@@ -8696,7 +8696,7 @@ body.front-end-publishing .hentry .floating-button {
   font-size: 1.8rem;
   width: 44px;
   height: 44px;
-  background: #005ab1;
+  background: #f2704a;
   padding: 15px;
   color: white;
   text-decoration: none;
@@ -8728,7 +8728,7 @@ body.front-end-publishing .hentry .floating-button:active {
   box-shadow: 0 25px 55px 0 rgba(0, 0, 0, 0.6), 0 16px 28px 0 rgba(0, 0, 0, 0.6);
 }
 body.front-end-publishing .hentry .floating-button:active {
-  background: #00407e;
+  background: #ef4a1a;
 }
 body.front-end-publishing .hentry .floating-button .label {
   opacity: 0;
@@ -8811,7 +8811,7 @@ body.front-end-publishing .entry-content .wpfepp-post-table-container i {
   color: #6e6e6e;
 }
 body.front-end-publishing .entry-content .wpfepp-post-table-container i:hover {
-  color: #1b39a8;
+  color: #f16f50;
 }
 body.front-end-publishing .entry-content #material-input-wrap-content:after {
   display: none;
@@ -8831,7 +8831,7 @@ body.front-end-publishing .notification {
   color: white;
 }
 body.front-end-publishing .notification.error {
-  background: #005ab1;
+  background: #f2704a;
 }
 body.front-end-publishing .wpfepp-posts ul.wpfepp-tabs {
   background: #eeeeee;
@@ -8923,7 +8923,7 @@ body.front-end-publishing .wpfepp-message {
 body.front-end-publishing .wpfepp-message a {
   display: inline-block;
   padding: 9px 15px 10px;
-  background: #005ab1;
+  background: #f2704a;
   color: white;
   line-height: 1;
   margin-top: 10px;
@@ -8964,7 +8964,7 @@ body.front-end-publishing .wpfepp-form .wpfepp-button {
   background: #888;
 }
 body.front-end-publishing .wpfepp-form .wpfepp-button.blue {
-  background: #1b39a8;
+  background: #f16f50;
 }
 body.front-end-publishing .wpfepp-form .wpfepp-form-field-container {
   margin-bottom: 20px;
@@ -8987,7 +8987,7 @@ body.front-end-publishing .wpfepp-form .wpfepp-form-field-container.wpfepp-thumb
   display: block;
 }
 body.front-end-publishing .wpfepp-form .wpfepp-form-field-container.wpfepp-thumbnail-field-container a {
-  color: #005ab1;
+  color: #f2704a;
 }
 body.front-end-publishing .wpfepp-form .wpfepp-thumbnail-field-container .wpfepp-form-field-label {
   display: none;
@@ -9013,7 +9013,7 @@ body.front-end-publishing .wpfepp-form .wp-editor-wrap .wp-media-buttons .button
   transition-duration: 0.3s;
   box-shadow: 0 0 0 rgba(0, 0, 0, 0.2);
   border: none;
-  background: #005ab1;
+  background: #f2704a;
   color: white;
   padding: 5px 10px;
   height: 36px;
@@ -9039,7 +9039,7 @@ body.front-end-publishing .wpfepp-form .wp-editor-wrap.tmce-active .switch-tmce:
   bottom: 0;
   left: 0;
   height: 3px;
-  background: #005ab1;
+  background: #f2704a;
 }
 body.front-end-publishing .wpfepp-form .wp-editor-wrap .mce-container-body .mce-container {
   padding: 4px 3px;
@@ -9068,7 +9068,7 @@ body.front-end-publishing #form-edit-profile .has-input-icon .info .material-inp
   line-height: 1;
 }
 body.front-end-publishing #form-edit-profile .has-input-icon .info .material-input-wrap.focus:before {
-  color: #40A9F2;
+  color: #F2704A;
 }
 body.front-end-publishing #form-edit-profile .basic-inputs .info.user_login .material-input-wrap:before {
   content: '\f427';
@@ -9201,7 +9201,7 @@ body.front-end-publishing #form-edit-profile .password-inputs .info.user_passwor
   font-size: 16px;
   font-size: 1.6rem;
   color: white;
-  background: #40A9F2;
+  background: #F2704A;
   border-bottom: 1px solid #DFDFDF;
   position: relative;
   font-weight: 300;
@@ -9296,7 +9296,7 @@ body.front-end-publishing #form-edit-profile .password-inputs .info.user_passwor
   left: 50px;
   width: 20px;
   font-size: 20px;
-  color: #40A9F2;
+  color: #F2704A;
 }
 .drawer-content .drawer-navigation li a {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
@@ -9332,7 +9332,7 @@ body.front-end-publishing #form-edit-profile .password-inputs .info.user_passwor
 .widget .widget-title {
   font-size: 14px;
   font-size: 1.4rem;
-  color: #2196F3;
+  color: #f16f50;
   font-weight: 700;
   margin-bottom: 10px;
   text-transform: uppercase;
@@ -9581,18 +9581,18 @@ body.admin-bar.scrolling .drawer-content {
 #masthead .site-title {
   font-size: 26px;
   font-size: 2.6rem;
-  font-weight: 300;
+  font-weight: 500;
   line-height: 1.6;
   text-align: center;
   margin-bottom: 5px;
-  color: #2196F3;
+  color: #f16f50;
 }
 #masthead .site-title a {
   text-decoration: none;
-  color: #2196F3;
+  color: #f16f50;
 }
 #masthead .site-title a:hover {
-  color: #02a8f3;
+  color: #f16f50;
 }
 #masthead .site-description {
   font-size: 14px;
@@ -9638,7 +9638,7 @@ body.admin-bar.scrolling .drawer-content {
   font-size: 30px;
   font-size: 3rem;
   color: white;
-  background: #1b39a8;
+  background: #f16f50;
   padding: 7px;
   background-clip: padding-box;
   /* stops bg color from leaking outside the border: */
@@ -9718,7 +9718,7 @@ body.author #masthead .site-logo-link img, body.edit-profile #masthead .site-log
 .logo-img-box {
   width: 43px;
   height: 50px;
-  background: url(images/logosvg.svg) no-repeat 0 0;
+  background: url(images/logo-box-orange.svg) no-repeat 0 0;
 }
 
 .site-logo-ico {
@@ -9734,7 +9734,7 @@ body.author #masthead .site-logo-link img, body.edit-profile #masthead .site-log
   margin-bottom: 5px;
   width: 56px;
   height: 65px;
-  background: url(images/logosvg.svg) no-repeat 0 0;
+  background: url(images/logo-box-orange.svg) no-repeat 0 0;
 }
 
 /**
@@ -9802,7 +9802,7 @@ body.author #masthead .site-logo-link img, body.edit-profile #masthead .site-log
 .page-header .page-title {
   font-size: 22px;
   font-size: 2.2rem;
-  color: #40A9F2;
+  color: #F2704A;
   font-weight: 300;
   line-height: 1.2;
 }
@@ -9845,7 +9845,7 @@ body.author #masthead .site-logo-link img, body.edit-profile #masthead .site-log
 }
 .hentry.has-post-thumbnail .edit-link a {
   color: white;
-  background: #40A9F2;
+  background: #F2704A;
   padding: 5px 15px;
   background-clip: padding-box;
   /* stops bg color from leaking outside the border: */
@@ -9879,7 +9879,7 @@ body.author #masthead .site-logo-link img, body.edit-profile #masthead .site-log
   padding: 18px 15px;
   font-size: 20px;
   font-size: 2rem;
-  color: #70bff5;
+  color: #f5967a;
   position: absolute;
   top: 0;
   right: 0;
@@ -10098,7 +10098,7 @@ body.author #masthead .site-logo-link img, body.edit-profile #masthead .site-log
   top: -26px;
   right: 25px;
   line-height: 1;
-  background: #005ab1;
+  background: #f2704a;
   text-align: center;
   color: white;
   background-clip: padding-box;
@@ -10151,7 +10151,7 @@ body.author #masthead .site-logo-link img, body.edit-profile #masthead .site-log
 }
 .entry-title a:hover {
   text-decoration: none;
-  color: #1b39a8;
+  color: #f16f50;
 }
 
 .entry-summary {
@@ -10218,7 +10218,7 @@ body.author #masthead .site-logo-link img, body.edit-profile #masthead .site-log
 .error404 .hentry .author-social-links li a.website:hover,
 .page .hentry .author-social-links li a.website:hover,
 .single .hentry .author-social-links li a.website:hover {
-  background: #1b39a8;
+  background: #f16f50;
 }
 .error404 .hentry .author-social-links li a.twitter:hover,
 .page .hentry .author-social-links li a.twitter:hover,
@@ -10446,7 +10446,7 @@ body.author #masthead .site-logo-link img, body.edit-profile #masthead .site-log
 }
 .page-links a .page-link {
   border: none;
-  color: #40A9F2;
+  color: #F2704A;
 }
 
 .paging-navigation {
@@ -10505,7 +10505,7 @@ body.author #masthead .site-logo-link img, body.edit-profile #masthead .site-log
   display: inline;
 }
 .paging-navigation a {
-  color: #1b39a8;
+  color: #f16f50;
   text-decoration: none;
   font-size: 16px;
   font-size: 1.6rem;
@@ -10551,7 +10551,7 @@ body.author #masthead .site-logo-link img, body.edit-profile #masthead .site-log
   font-style: normal !important;
   font-size: 50px;
   font-size: 5rem;
-  color: #2196F3;
+  color: #f16f50;
   line-height: 1;
   display: block;
   padding: 40px 0 10px;
@@ -10560,7 +10560,7 @@ body.author #masthead .site-logo-link img, body.edit-profile #masthead .site-log
   display: block;
   font-size: 18px;
   font-size: 1.8rem;
-  color: #40A9F2;
+  color: #F2704A;
   padding: 10px 20px 0;
 }
 .mdb-service-item .description {
@@ -10570,7 +10570,7 @@ body.author #masthead .site-logo-link img, body.edit-profile #masthead .site-log
 }
 
 .ico-avatar {
-  background: url(images/logosvg.svg) no-repeat 0 0;
+  background: url(images/logo-box-orange.svg) no-repeat 0 0;
   display: block;
   width: 26px;
   height: 30px;
@@ -10916,7 +10916,7 @@ body.author #masthead .site-logo-link img, body.edit-profile #masthead .site-log
 10.4 Comments
 --------------------------------------------------------------*/
 .comments-title {
-  color: #40A9F2;
+  color: #F2704A;
   font-weight: bold;
   font-size: 12px;
   font-size: 1.2rem;
@@ -11086,7 +11086,7 @@ body.author #masthead .site-logo-link img, body.edit-profile #masthead .site-log
 }
 
 #reply-title {
-  color: #40A9F2;
+  color: #F2704A;
   font-weight: bold;
   font-size: 12px;
   font-size: 1.2rem;
@@ -11225,7 +11225,7 @@ body.author #masthead .site-logo-link img, body.edit-profile #masthead .site-log
 .ico-footer-logo-img {
   width: 43px;
   height: 50px;
-  background: url(images/logosvg.svg) no-repeat 0 0;
+  background: url(images/logo-box-orange.svg) no-repeat 0 0;
 }
 
 .logo-footer-logo-text {
@@ -14523,7 +14523,7 @@ Copyright (c) 2014 Daniel Eden
 }
 .logged-in .morph-heading-text:hover,
 .logged-in .morph-subheading-text:hover {
-  color: #005ab1;
+  color: #f2704a;
 }
 
 .morph-search-wrapper input:focus {

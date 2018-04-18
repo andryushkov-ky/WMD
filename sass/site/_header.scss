@@ -31,7 +31,7 @@
 
 	.site-title{
 		@include font-size( 2.6 );
-		font-weight: 300;
+		font-weight: 500;
 		line-height: 1.6;
 		text-align: center;
 		margin-bottom: 5px;
@@ -42,7 +42,7 @@
 			color: $color__accent-darker;
 
 			&:hover{
-				color: #02a8f3;
+				color: #f16f50;
 			}
 		}
 	}
@@ -192,7 +192,7 @@ body{
 .logo-img-box {
 	width: 43px;
 	height: 50px;
-	background: url(images/logosvg.svg) no-repeat 0 0;
+	background: url(images/logo-box-orange.svg) no-repeat 0 0;
 }
 
 .site-logo-ico {
@@ -208,7 +208,7 @@ body{
 	margin-bottom: 5px;
 	width: 56px;
 	height: 65px;
-	background: url(images/logosvg.svg) no-repeat 0 0;
+	background: url(images/logo-box-orange.svg) no-repeat 0 0;
 }
 
 /**

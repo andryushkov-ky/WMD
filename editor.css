@@ -7614,7 +7614,7 @@ h1, h2, h3, h4, h5, h6 {
 .entry-content h1 {
   font-size: 24px;
   font-size: 2.4rem;
-  color: #2196F3;
+  color: #f16f50;
   line-height: 1.2;
   margin-top: 1em;
   margin-bottom: .4em;
@@ -7640,7 +7640,7 @@ h1, h2, h3, h4, h5, h6 {
 .entry-content h2 {
   font-size: 19px;
   font-size: 1.9rem;
-  color: #2196F3;
+  color: #f16f50;
   line-height: 1.3;
   margin-top: 1em;
   margin-bottom: .4em;
@@ -7665,7 +7665,7 @@ h1, h2, h3, h4, h5, h6 {
 .entry-content h3 {
   font-size: 16px;
   font-size: 1.6rem;
-  color: #2196F3;
+  color: #f16f50;
   line-height: 1.3;
   margin-top: 1em;
   margin-bottom: .4em;
@@ -7675,7 +7675,7 @@ h1, h2, h3, h4, h5, h6 {
 .comment-body h4,
 .entry-content h4 {
   font-weight: 300;
-  color: #2196F3;
+  color: #f16f50;
   line-height: 1.4;
   margin-top: .4em;
   margin-bottom: .4em;
@@ -7685,11 +7685,11 @@ h1, h2, h3, h4, h5, h6 {
 .comment-body a,
 .entry-content a {
   text-decoration: none;
-  color: #02a8f3;
+  color: #fb8954;
 }
 .comment-body a:hover,
 .entry-content a:hover {
-  color: #1b39a8;
+  color: #f16f50;
 }
 .comment-body p,
 .entry-content p {
@@ -7699,7 +7699,7 @@ h1, h2, h3, h4, h5, h6 {
 .entry-content b,
 .entry-content strong {
   font-weight: 700;
-  color: #2196F3;
+  color: #f16f50;
 }
 .comment-body dfn, .comment-body cite, .comment-body em, .comment-body i,
 .entry-content dfn,
@@ -7729,7 +7729,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 1em;
   font-style: italic;
   line-height: 1.4;
-  color: #2196F3;
+  color: #f16f50;
 }
 .comment-body pre,
 .entry-content pre {
@@ -7749,7 +7749,7 @@ h1, h2, h3, h4, h5, h6 {
 .entry-content tt,
 .entry-content var {
   font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-  color: #2196F3;
+  color: #f16f50;
 }
 .comment-body code,
 .entry-content code {
@@ -7901,7 +7901,7 @@ body#tinymce {
 body#tinymce h1 {
   font-size: 24px;
   font-size: 2.4rem;
-  color: #2196F3;
+  color: #f16f50;
   line-height: 1.2;
   margin-top: 1em;
   margin-bottom: .4em;
@@ -7924,7 +7924,7 @@ body#tinymce h1 {
 body#tinymce h2 {
   font-size: 19px;
   font-size: 1.9rem;
-  color: #2196F3;
+  color: #f16f50;
   line-height: 1.3;
   margin-top: 1em;
   margin-bottom: .4em;
@@ -7946,7 +7946,7 @@ body#tinymce h2 {
 body#tinymce h3 {
   font-size: 16px;
   font-size: 1.6rem;
-  color: #2196F3;
+  color: #f16f50;
   line-height: 1.3;
   margin-top: 1em;
   margin-bottom: .4em;
@@ -7955,7 +7955,7 @@ body#tinymce h3 {
 }
 body#tinymce h4 {
   font-weight: 300;
-  color: #2196F3;
+  color: #f16f50;
   line-height: 1.4;
   margin-top: .4em;
   margin-bottom: .4em;
@@ -7964,17 +7964,17 @@ body#tinymce h4 {
 }
 body#tinymce a {
   text-decoration: none;
-  color: #02a8f3;
+  color: #fb8954;
 }
 body#tinymce a:hover {
-  color: #1b39a8;
+  color: #f16f50;
 }
 body#tinymce p {
   margin-bottom: 1em;
 }
 body#tinymce b, body#tinymce strong {
   font-weight: 700;
-  color: #2196F3;
+  color: #f16f50;
 }
 body#tinymce dfn, body#tinymce cite, body#tinymce em, body#tinymce i {
   font-style: italic;
@@ -7997,7 +7997,7 @@ body#tinymce address {
   margin: 0 0 1em;
   font-style: italic;
   line-height: 1.4;
-  color: #2196F3;
+  color: #f16f50;
 }
 body#tinymce pre {
   background: #eee;
@@ -8012,7 +8012,7 @@ body#tinymce pre {
 }
 body#tinymce code, body#tinymce kbd, body#tinymce tt, body#tinymce var {
   font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-  color: #2196F3;
+  color: #f16f50;
 }
 body#tinymce code {
   box-shadow: inset 0 0 1px #797979;
@@ -8122,5 +8122,5 @@ body#tinymce blockquote p {
   font-size: 2.1rem;
 }
 body#tinymce a {
-  color: #40A9F2;
+  color: #F2704A;
 }

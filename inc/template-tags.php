@@ -15,7 +15,7 @@
 function mdb_site_branding(){
 	?>
 		<div class="site-branding">
-      <a href="/" class="ripple-effect ico-site-logo-wrap" data-ripple-limit="#masthead" data-ripple-color="#40A9F2">
+      <a href="/" class="ripple-effect ico-site-logo-wrap" data-ripple-limit="#masthead" data-ripple-color="#f4835e">
         <div class="ico-site-logo-center"></div>
       </a>
 			<?php if ( is_author() ) : ?>
