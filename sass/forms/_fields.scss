@@ -62,16 +62,6 @@ input[disabled="disabled"]{
 			color: #AFAFAF;
 		}
 	}
-
-	&:after{
-		content: '';
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		right: 100%;
-		height: 2px;
-		background: $color__accent;
-	}
 	
 	&.filled,
 	&.focus{

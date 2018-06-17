@@ -8206,15 +8206,6 @@ input[disabled="disabled"] {
   font-size: 16px !important;
   color: #AFAFAF;
 }
-.material-input-wrap:after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 100%;
-  height: 2px;
-  background: #F2704A;
-}
 .material-input-wrap.filled:after, .material-input-wrap.focus:after {
   right: 0;
 }
@@ -8265,19 +8256,95 @@ a:hover, a:focus, a:active {
 /*--------------------------------------------------------------
 5.2 Menus
 --------------------------------------------------------------*/
+#ico-navigation {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0 16px;
+  z-index: 50;
+  min-height: 64px;
+  background: #455a64;
+}
+#ico-navigation .site-logo-link {
+  display: inline-flex;
+  align-items: center;
+}
+#ico-navigation #toggle-drawer {
+  display: none;
+  padding: 0 12px;
+  align-items: center;
+  color: #fff;
+}
+
+#login-links {
+  display: flex;
+  margin: 0 0;
+  align-items: center;
+}
+#login-links li {
+  list-style: none;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  outline: none;
+}
+#login-links a {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 20px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 13px;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  opacity: 0.8;
+  outline: none;
+}
+
+.top-link-active {
+  position: relative;
+  opacity: 1;
+}
+.top-link-active:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background-color: #f16f50;
+}
+
+.header-btn {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.header-btn-wrap {
+  padding: 20px 12px;
+  margin: 0 4px;
+  opacity: 0;
+}
+.header-btn-wrap--right {
+  display: none;
+}
+
 #top-navigation {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
+  padding: 0 16px;
   z-index: 50;
-  text-align: center;
 }
 #top-navigation .toggle-button {
   position: absolute;
   top: 21px;
   left: 20px;
-  color: white;
   font-size: 24px;
   width: 24px;
   height: 24px;
@@ -8349,69 +8416,17 @@ body .morph-main-menu-button {
   color: white;
 }
 
-#login-links {
-  margin: 0;
-  font-size: 16px;
-  font-size: 1.6rem;
-  text-transform: uppercase;
-  position: absolute;
-  top: 55px;
-  right: 15px;
-  background: white;
-  padding: 5px 0;
-  background-clip: padding-box;
-  /* stops bg color from leaking outside the border: */
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+body #top-navigation {
+  min-height: 64px;
+  background: #455a64;
+}
+body #top-navigation .site-title-nav {
   display: none;
 }
-#login-links.active {
-  display: inline-block;
-}
-#login-links li {
-  list-style: none;
-  display: block;
-}
-#login-links a {
-  display: block;
-  text-align: left;
-  text-decoration: none;
-  padding: 5px 18px;
-  width: 150px;
-  color: #f2704a;
-  -webkit-transition-duration: 0.3s;
-  -moz-transition-duration: 0.3s;
-  -ms-transition-duration: 0.3s;
-  -o-transition-duration: 0.3s;
-  -transition-duration: 0.3s;
-  transition-duration: 0.3s;
-}
-#login-links a:hover {
-  opacity: .7;
-  -webkit-transition-duration: 0.2s;
-  -moz-transition-duration: 0.2s;
-  -ms-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-  -transition-duration: 0.2s;
-  transition-duration: 0.2s;
-}
-#login-links a:active {
-  opacity: .9;
-}
-
-body.scrolling #top-navigation {
-  min-height: 66px;
-  background: #3a4457;
-  box-shadow: 0 1px 4px #333;
-}
-body.scrolling #top-navigation .site-title-nav {
-  display: none;
-}
-body.scrolling #top-navigation .site-logo-link {
+body #top-navigation .site-logo-link {
   display: inline-flex;
 }
-body.scrolling #top-navigation .toggle-button {
+body #top-navigation .toggle-button {
   color: white;
 }
 body.admin-bar #top-navigation {
@@ -8490,10 +8505,6 @@ body.admin-bar.scrolling #top-navigation {
   color: #979797;
 }
 
-.top-link-active {
-  border-left: 3px solid #f16f50;
-}
-
 /**
 * Admin bar large mobile screen adjustment
 */
@@ -8506,28 +8517,8 @@ body.admin-bar.scrolling #top-navigation {
     display: none;
   }
 
-  #login-links {
-    display: block;
-    top: 17px;
-    padding: 0;
-    background: transparent;
-    box-shadow: none;
-  }
-  #login-links li {
-    display: inline-block;
-  }
-  #login-links li a {
-    width: auto;
-  }
-
   .scrolling #login-links a {
     color: white;
-  }
-
-  .top-link-active {
-    border-bottom: 3px solid #f16f50;
-    padding-bottom: 13px;
-    border-left: none;
   }
 }
 /**
@@ -8595,6 +8586,67 @@ body.admin-bar.scrolling #top-navigation {
     top: 16px;
   }
 }
+.left-navigation {
+  margin-top: 32px;
+}
+.left-navigation .drawer-list {
+  display: flex;
+  padding: 0 16px;
+  flex-direction: column;
+}
+.left-navigation .l-checkbox {
+  display: none;
+}
+.left-navigation .l-item {
+  background-color: #fff;
+  cursor: pointer;
+}
+.left-navigation .l-header {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+  min-height: 48px;
+}
+.left-navigation .o-icon,
+.left-navigation .l-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 32px;
+}
+.left-navigation .l-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 16px;
+  color: #f2795c;
+}
+.left-navigation .l-arrow {
+  margin-left: auto;
+  width: 24px;
+  height: 24px;
+}
+.left-navigation .l-list {
+  max-height: 200px;
+  transition: max-height 0.4s ease-out;
+}
+.left-navigation .l-checkbox:checked + .l-header .l-arrow {
+  transform: rotate(180deg);
+}
+.left-navigation .l-checkbox:checked ~ .l-list {
+  max-height: 0;
+}
+.left-navigation .o-item {
+  display: flex;
+  min-height: 48px;
+  text-decoration: none;
+  align-items: center;
+}
+.left-navigation .o-text {
+  font-size: 16px;
+  color: #212121;
+}
+
 /*--------------------------------------------------------------
 6.0 Accessibility
 --------------------------------------------------------------*/
@@ -9194,14 +9246,15 @@ body.front-end-publishing #form-edit-profile .password-inputs .info.user_passwor
   background: white;
   box-shadow: 1px 0 10px #4a4a4a;
   z-index: 70;
+  width: 256px;
   overflow-y: auto;
 }
 .drawer-content .drawer-header {
-  padding: 100px 15px 35px;
+  padding: 60px 15px 35px;
   font-size: 16px;
   font-size: 1.6rem;
   color: white;
-  background: #F2704A;
+  background: #f16f50;
   border-bottom: 1px solid #DFDFDF;
   position: relative;
   font-weight: 300;
@@ -9225,6 +9278,9 @@ body.front-end-publishing #form-edit-profile .password-inputs .info.user_passwor
 }
 .drawer-content .drawer-header .site-name {
   line-height: 1;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 400;
 }
 .drawer-content .drawer-header .site-description {
   font-size: 14px;
@@ -9233,7 +9289,7 @@ body.front-end-publishing #form-edit-profile .password-inputs .info.user_passwor
 }
 .drawer-content .drawer-header .toggle-button {
   position: absolute;
-  top: 24px;
+  top: 57px;
   left: 19px;
   font-size: 20px;
   color: white;
@@ -9522,7 +9578,7 @@ body.admin-bar.scrolling .drawer-content {
 @media screen and (min-width: 760px) {
   .drawer-content {
     right: auto;
-    width: 480px;
+    width: 256px;
   }
   .drawer-content .drawer-header {
     font-size: 23px;
@@ -9552,6 +9608,13 @@ body.admin-bar.scrolling .drawer-content {
 /*--------------------------------------------------------------
 10.1 Header
 --------------------------------------------------------------*/
+.header-search {
+  margin-left: auto;
+  margin-right: 10px;
+  position: relative;
+  width: 210px;
+}
+
 #masthead {
   background: white;
   color: white;
@@ -9708,21 +9771,15 @@ body.author #masthead .site-logo-link img, body.edit-profile #masthead .site-log
 }
 
 .logo-text-box {
-  display: none;
-  margin-left: 15px;
-  height: 50px;
-  width: 120px;
-  background: url(images/logo-text.svg) no-repeat 0 0;
+  height: 40px;
+  width: 150px;
+  background: url(images/logo-text.svg) no-repeat center center;
 }
 
 .logo-img-box {
-  width: 43px;
-  height: 50px;
-  background: url(images/logo-box-orange.svg) no-repeat 0 0;
-}
-
-.site-logo-ico {
-  padding-top: 8px;
+  width: 40px;
+  height: 40px;
+  background: url(images/logo-box-orange.svg) no-repeat center center;
 }
 
 .ico-site-logo-wrap {
@@ -9775,6 +9832,29 @@ body.author #masthead .site-logo-link img, body.edit-profile #masthead .site-log
     width: 940px;
     margin-right: auto;
     margin-left: auto;
+  }
+}
+@media screen and (max-width: 1000px) {
+  #login-links {
+    display: none;
+  }
+
+  .header-btn-wrap {
+    display: none;
+  }
+
+  #ico-navigation #toggle-drawer {
+    display: flex;
+  }
+}
+@media screen and (max-width: 490px) {
+  #ico-navigation .logo-text-box {
+    display: none;
+  }
+}
+@media screen and (max-width: 350px) {
+  #ico-navigation {
+    padding: 0;
   }
 }
 /*--------------------------------------------------------------
@@ -10171,7 +10251,7 @@ body.author #masthead .site-logo-link img, body.edit-profile #masthead .site-log
 }
 .entry-content .share-title {
   text-align: center;
-  margin-top: 5em;
+  margin-top: 2em;
   margin-bottom: 1.4em;
 }
 .entry-content .social-links {
@@ -14523,9 +14603,12 @@ Copyright (c) 2014 Daniel Eden
 }
 .logged-in .morph-heading-text:hover,
 .logged-in .morph-subheading-text:hover {
-  color: #f2704a;
+  color: #f16f50;
 }
 
+.morph-search-wrapper {
+  border-color: #f16f50 !important;
+}
 .morph-search-wrapper input:focus {
   box-shadow: none;
 }

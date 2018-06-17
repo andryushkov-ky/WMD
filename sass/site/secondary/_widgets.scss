@@ -16,13 +16,14 @@
 	background: white;
 	box-shadow: 1px 0 10px #4a4a4a;
 	z-index: 70;
+	width: 256px;
 	overflow-y: auto;
 
 	.drawer-header{
-		padding: 100px 15px 35px;
+		padding: 60px 15px 35px;
 		@include font-size( 1.6 );
 		color: white;
-		background: $color__accent;
+		background: #f16f50;
 		border-bottom: 1px solid $color__border;
 		position: relative;
 		font-weight: 300;
@@ -49,6 +50,9 @@
 
 		.site-name{
 			line-height: 1;
+			font-family: "Roboto";
+			font-size: 16px;
+			font-weight: 400;
 		}
 
 		.site-description{
@@ -58,7 +62,7 @@
 
 		.toggle-button{
 			position: absolute;
-			top: 24px;
+			top: 57px;
 			left: 19px;
 			font-size: 20px;
 			color: white;
@@ -375,7 +379,7 @@ body{
 @media screen and ( min-width: $size__breakpoint-tablet ){
 	.drawer-content{
 		right: auto;
-		width: 480px;
+		width: 256px;
 
 		.drawer-header{
 			@include font-size( 2.3 );

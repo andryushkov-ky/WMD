@@ -49,12 +49,14 @@
 		position: relative;
 
 		&:hover{
-			color: $color__pink;
+			color: $color__accent-darker;
 		}
 	}
 }
 
 .morph-search-wrapper{
+	border-color: $color__accent-darker !important;
+
 	input:focus{
 		box-shadow: none;
 	}

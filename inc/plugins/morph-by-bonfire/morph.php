@@ -330,16 +330,16 @@
 	?>
 		
 		<!-- BEGIN MAIN MENU BUTTON -->
-<!--    --><?php //if( is_user_logged_in() ) { ?>
-<!--      --><?php //if( get_option('bonfire_morph_hide_main_menu_button') ) { ?>
-<!--      --><?php //} else { ?>
-<!--      <div class="morph-main-menu-button-wrapper--><?php //if ( is_admin_bar_showing() ) { ?><!-- wp-toolbar-active--><?php //} ?><!----><?php //if( get_option('bonfire_morph_absolute_position') ) { ?><!-- morph-absolute--><?php //} ?><!--">-->
-<!--        <div class="morph-main-menu-button">-->
-<!--          <div class="morph-main-menu-button-middle"></div>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--      --><?php //} ?>
-<!--		--><?php //} ?>
+    <?php if( is_user_logged_in() ) { ?>
+      <?php if( get_option('bonfire_morph_hide_main_menu_button') ) { ?>
+      <?php } else { ?>
+      <div class="morph-main-menu-button-wrapper<?php if ( is_admin_bar_showing() ) { ?> wp-toolbar-active<?php } ?><?php if( get_option('bonfire_morph_absolute_position') ) { ?> morph-absolute<?php } ?>">
+        <div class="morph-main-menu-button">
+          <div class="morph-main-menu-button-middle"></div>
+        </div>
+      </div>
+      <?php } ?>
+		<?php } ?>
 		<!-- END MAIN MENU BUTTON -->
 
 		<!-- BEGIN MAIN WRAPPER -->
@@ -660,7 +660,7 @@
 
 		<!-- BEGIN CUSTOM COLORS (WP THEME CUSTOMIZER) -->
 		<!-- menu button -->
-		<?php $bonfire_morph_menu_button_color = get_option('bonfire_morph_menu_button_color', '#ec407a' ); ?>
+		<?php $bonfire_morph_menu_button_color = get_option('bonfire_morph_menu_button_color', '#f16f50' ); ?>
 		<?php $bonfire_morph_menu_button_hover_color = get_option('bonfire_morph_menu_button_hover_color'); ?>
 		<?php $bonfire_morph_menu_button_active_color = get_option('bonfire_morph_menu_button_active_color', '#fafafa' ); ?>
 		<?php $bonfire_morph_menu_button_active_hover_color = get_option('bonfire_morph_menu_button_active_hover_color'); ?>
@@ -812,7 +812,7 @@
 	}
 	
 	.morph-search-button:hover svg { 
-		<?php bonfire_morph_output_css( 'fill', get_option('bonfire_morph_search_button_hover_color', '#ec407a') ); ?>
+		<?php bonfire_morph_output_css( 'fill', get_option('bonfire_morph_search_button_hover_color', '#f16f50') ); ?>
 	}
 	
 	/* search close button */
@@ -823,12 +823,12 @@
 	
 	.morph-search-close-wrapper:hover .morph-search-close-button:before,
 	.morph-search-close-wrapper:hover .morph-search-close-button:after { 
-		<?php bonfire_morph_output_css( 'background-color', get_option('bonfire_morph_search_close_button_hover_color', '#ec407a' ) ); ?> 
+		<?php bonfire_morph_output_css( 'background-color', get_option('bonfire_morph_search_close_button_hover_color', '#f16f50' ) ); ?>
 	}
 	
 	/* search field border + text */
 	.morph-search-wrapper { 
-		<?php bonfire_morph_output_css( 'border-color', get_option('bonfire_morph_search_border_color', '#ec407a') ); ?> 
+		<?php bonfire_morph_output_css( 'border-color', get_option('bonfire_morph_search_border_color', '#f16f50') ); ?>
 	}
 	
 	.morph-search-wrapper #searchform input { 
@@ -863,7 +863,7 @@
 	}
 
 	.morph-by-bonfire ul li a:hover {
-		<?php bonfire_morph_output_css( 'color', get_option('bonfire_morph_main_menu_item_hover_color', '#ec407a' ) ); ?> 
+		<?php bonfire_morph_output_css( 'color', get_option('bonfire_morph_main_menu_item_hover_color', '#f16f50' ) ); ?>
 	}
 
 	.morph-by-bonfire ul.sub-menu li a { 
