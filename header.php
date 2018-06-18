@@ -49,10 +49,10 @@
         <a href="https://icoanatomy.com/rating" title="ICO">ICO</a>
       </li>
       <li>
-        <a href="https://icoanatomy.com/rating" title="Coinlist">COINLIST</a>
+        <a href="https://icoanatomy.com/coinlist" title="Coinlist">COINLIST</a>
       </li>
       <li>
-        <a href="https://icoanatomy.com/rating" title="Cryptofunds">CRYPTOFUNDS</a>
+        <a href="https://icoanatomy.com/cryptofunds" title="Cryptofunds">CRYPTOFUNDS</a>
       </li>
       <li class="<?php if(is_category() && single_cat_title('', false ) == "Guides") {echo "top-link-active";} ?>">
         <a href="/category/guides" title="Guides">GUIDES</a>
