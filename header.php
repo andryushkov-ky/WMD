@@ -39,7 +39,7 @@
 
     <div class="header-btn-wrap">
       <div class="header-btn header-btn--prev">
-        <svg viewBox="0 0 24 24" style="pointer-events: none; display: block; width: 100%; height: 100%; fill: #f16f50;"><g><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"></path></g></svg>
+<!--        <svg viewBox="0 0 24 24" style="pointer-events: none; display: block; width: 100%; height: 100%; fill: #f16f50;"><g><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"></path></g></svg>-->
       </div>
     </div>
 
@@ -64,7 +64,7 @@
 
     <div class="header-btn-wrap header-btn-wrap--right">
       <div class="header-btn header-btn--next">
-        <svg viewBox="0 0 24 24" style="pointer-events: none; display: block; width: 100%; height: 100%; fill: #f16f50;"><g><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></g></svg>
+<!--        <svg viewBox="0 0 24 24" style="pointer-events: none; display: block; width: 100%; height: 100%; fill: #f16f50;"><g><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></g></svg>-->
       </div>
     </div>
 
