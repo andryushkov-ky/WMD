@@ -32,7 +32,7 @@
        data-ripple-mode="fixed">
     </a>
 
-    <a href="/" class="site-logo-link ripple-effect site-logo-ico" data-ripple-mode="fixed">
+    <a href="https://icoanatomy.com/" class="site-logo-link ripple-effect site-logo-ico" data-ripple-mode="fixed">
       <div class="logo-img-box"></div>
       <div class="logo-text-box"></div>
     </a>
@@ -59,6 +59,12 @@
       </li>
       <li class="<?php if($_SERVER[REQUEST_URI] == "/" || stripos($_SERVER[REQUEST_URI], '/page') === 0 || stripos($_SERVER[REQUEST_URI], '/news/page') !== FALSE || (is_category() && single_cat_title('', false ) == "News")) {echo "top-link-active";} ?>">
         <a href="/category/news" title="News">NEWS</a>
+      </li>
+      <li>
+        <a href="https://icoanatomy.com/about-for-ico" title="For ICO team">FOR ICO TEAM</a>
+      </li>
+      <li>
+        <a href="https://icoanatomy.com/about-for-investors" title="About us">ABOUT US</a>
       </li>
     </ul>
 
