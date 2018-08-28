@@ -5,6 +5,7 @@
 	width: 210px;
 }
 
+
 #masthead{
 	background-image: linear-gradient(141deg, #455a64 10%, rgba(83, 87, 88, 0.98) 51%, rgba(241, 111, 80, 0.87) 75%);
 	padding-bottom: 10px;
@@ -37,7 +38,7 @@
 	}
 
 	.site-title{
-		@include font-size( 2.6 );
+		@include font-size( 4 );
 		font-weight: 500;
 		line-height: 1.6;
 		text-align: center;
@@ -223,15 +224,30 @@ body{
 @media screen and ( min-width: $size__breakpoint-tablet ){
 	#masthead{
 		.site-branding{
-			margin: 70px 20px;
+			width: 88%;
+			display: flex;
+			align-items: center;
+			margin: 70px auto 40px !important;
+			max-width: 1560px;
+		}
+
+		.ico-site-logo-wrap {
+			height: 87px;
+			width: 70px;
+			margin-right: 20px;
+			margin-top: -90px;
+		}
+
+		.site-title {
+			margin-top: -90px;
+		}
+
+		.author-social-links {
+			margin: 90px 0 0 auto !important;
 		}
 
 		.site-logo-link{
 			max-width: 395px;
-		}
-
-		.site-title{
-			@include font-size( 4 );
 		}
 
 		.site-description{
@@ -243,7 +259,7 @@ body{
 				margin: 0 7px 14px;
 
 				a{
-					padding: 10px;					
+					padding: 10px;
 				}
 			}
 		}
@@ -251,17 +267,6 @@ body{
 		.ico-site-logo-center {
 			width: 90px;
 			height: 104px;
-		}
-	}
-}
-
-/**
-* Desktop adjustment
-*/
-@media screen and ( min-width: $size__breakpoint-desktop ){
-	#masthead{
-		.site-branding{
-			@include wrap( 940px );
 		}
 	}
 }
@@ -279,6 +284,12 @@ body{
 		#toggle-drawer {
 			display: flex;
 		}
+	}
+}
+
+@media screen and ( max-width: 860px ){
+	.site-title {
+		font-size: 35px !important;
 	}
 }
 

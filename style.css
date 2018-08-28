@@ -9643,8 +9643,8 @@ body.admin-bar.scrolling .drawer-content {
   height: auto;
 }
 #masthead .site-title {
-  font-size: 26px;
-  font-size: 2.6rem;
+  font-size: 40px;
+  font-size: 4rem;
   font-weight: 500;
   line-height: 1.6;
   text-align: center;
@@ -9803,14 +9803,26 @@ body.author #masthead .site-logo-link img, body.edit-profile #masthead .site-log
 */
 @media screen and (min-width: 760px) {
   #masthead .site-branding {
-    margin: 70px 20px;
+    width: 88%;
+    display: flex;
+    align-items: center;
+    margin: 70px auto 40px !important;
+    max-width: 1560px;
+  }
+  #masthead .ico-site-logo-wrap {
+    height: 87px;
+    width: 70px;
+    margin-right: 20px;
+    margin-top: -90px;
+  }
+  #masthead .site-title {
+    margin-top: -90px;
+  }
+  #masthead .author-social-links {
+    margin: 90px 0 0 auto !important;
   }
   #masthead .site-logo-link {
     max-width: 395px;
-  }
-  #masthead .site-title {
-    font-size: 40px;
-    font-size: 4rem;
   }
   #masthead .site-description {
     font-size: 16px;
@@ -9827,17 +9839,6 @@ body.author #masthead .site-logo-link img, body.edit-profile #masthead .site-log
     height: 104px;
   }
 }
-/**
-* Desktop adjustment
-*/
-@media screen and (min-width: 960px) {
-  #masthead .site-branding {
-    display: block;
-    width: 940px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-}
 @media screen and (max-width: 1176px) {
   #login-links {
     display: none;
@@ -9849,6 +9850,11 @@ body.author #masthead .site-logo-link img, body.edit-profile #masthead .site-log
 
   #ico-navigation #toggle-drawer {
     display: flex;
+  }
+}
+@media screen and (max-width: 860px) {
+  .site-title {
+    font-size: 35px !important;
   }
 }
 @media screen and (max-width: 490px) {

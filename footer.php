@@ -84,7 +84,7 @@
           <div class="l-item">
             <a href="https://icoanatomy.com/about-for-ico" class="l-header">
               <div class="l-icon"></div>
-              <div class="l-text">For ICO team</div>
+              <div class="l-text">For ICO teams</div>
             </a>
           </div>
           <div class="l-item">
@@ -131,7 +131,7 @@
           <a href="https://icoanatomy.com/cryptofunds" class="bottom-nav__item">Cryptofunds</a>
           <a href="/" class="bottom-nav__item">News</a>
           <a href="/category/guides" class="bottom-nav__item">Guides</a>
-          <a href="https://icoanatomy.com/about-for-ico" class="bottom-nav__item">For ICO team</a>
+          <a href="https://icoanatomy.com/about-for-ico" class="bottom-nav__item">For ICO teams</a>
           <a href="https://icoanatomy.com/about-for-investors" class="bottom-nav__item">About us</a>
         </div>
 

@@ -61,7 +61,7 @@
         <a href="/category/news" title="News">NEWS</a>
       </li>
       <li>
-        <a href="https://icoanatomy.com/about-for-ico" title="For ICO team">FOR ICO TEAM</a>
+        <a href="https://icoanatomy.com/about-for-ico" title="For ICO teams">FOR ICO TEAMS</a>
       </li>
       <li>
         <a href="https://icoanatomy.com/about-for-investors" title="About us">ABOUT US</a>
