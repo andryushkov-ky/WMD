@@ -67,6 +67,6 @@ global $post;
 <!--			</a>-->
 <!--			<a href="--><?php //echo esc_url( get_author_posts_url( $post->post_author ) ); ?><!--" class="entry-author-name" itemprop="author">--><?php //the_author(); ?><!--</a>			-->
 		</span>
-		<?php mdb_posted_on(); ?>
+		<?php if( single_cat_title( '', false ) !== 'Guides' ) { mdb_posted_on(); } ?>
 	</div>
 </article><!-- #post-## -->
